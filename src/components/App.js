@@ -9,7 +9,7 @@ const App = () => {
     : data;
 
   return (
-    <div className="container" is="main">
+    <div className="container" id="main">
       <h1 className="heading">Our Menu</h1>
       <div className="underLine"></div>
       <ul className="menu-filter-list">
