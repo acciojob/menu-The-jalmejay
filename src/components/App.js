@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import Menu from "./menu.jsx";
 const App = () => {
@@ -164,18 +164,30 @@ const App = () => {
       desc: "A fresh blend of lettuce, olives, feta cheese, and cherry tomatoes with olive oil dressing.",
     },
   ];
+  const [fil, handleFilter] = useState("");
+  const filteredData = fil
+    ? data.filter((e) => e.category.toLowerCase() === fil.toLowerCase())
+    : data;
 
   return (
     <div className="container" is="main">
       <h1 className="heading">Our Menu</h1>
       <div className="underLine"></div>
       <ul className="menu-filter-list">
-        <li className="filter">All</li>
-        <li className="filter">BreakFast</li>
-        <li className="filter">Lunch</li>
-        <li className="filter">Shakes</li>
+        <li className="filter" onClick={() => handleFilter("")}>
+          All
+        </li>
+        <li className="filter" onClick={() => handleFilter("BreakFast")}>
+          BreakFast
+        </li>
+        <li className="filter" onClick={() => handleFilter("Lunch")}>
+          Lunch
+        </li>
+        <li className="filter" onClick={() => handleFilter("Shakes")}>
+          Shakes
+        </li>
       </ul>
-      <Menu data={data} />
+      <Menu data={filteredData} />
     </div>
   );
 };
