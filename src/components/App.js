@@ -177,13 +177,13 @@ const App = () => {
         <li className="filter" onClick={() => handleFilter("")}>
           All
         </li>
-        <li className="filter" onClick={() => handleFilter("BreakFast")}>
+        <li className="filter" id="filter-btn-1" onClick={() => handleFilter("BreakFast")}>
           BreakFast
         </li>
-        <li className="filter" onClick={() => handleFilter("Lunch")}>
+        <li className="filter" id="filter-btn-2" onClick={() => handleFilter("Lunch")}>
           Lunch
         </li>
-        <li className="filter" onClick={() => handleFilter("Shakes")}>
+        <li className="filter" id="filter-btn-3" onClick={() => handleFilter("Shakes")}>
           Shakes
         </li>
       </ul>
