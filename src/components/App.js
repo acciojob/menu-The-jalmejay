@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
-import data form "./data.js"
-import Menu from "./menu.jsx";
+import data form "./data"
+import Menu from "./Menu";
 const App = () => {
   const [fil, handleFilter] = useState("");
   const filteredData = fil
