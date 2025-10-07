@@ -16,14 +16,14 @@ const App = () => {
         <li className="filter"  onClick={() => handleFilter("")}>
           All
         </li>
-        <li className="filter" id="filter-btn-1"  onClick={() => handleFilter("BreakFast")}>
+        <li className="filter" data-test-id="menu-item-breakfast id="filter-btn-1"  onClick={() => handleFilter("BreakFast")}>
           BreakFast
         </li>
         
-        <li className="filter" id="filter-btn-2" onClick={() => handleFilter("Shakes")}>
+        <li className="filter"  data-test-id="menu-item-shakes id="filter-btn-2" onClick={() => handleFilter("Shakes")}>
           Shakes
         </li>
-        <li className="filter" id="filter-btn-3"  onClick={() => handleFilter("Lunch")}>
+        <li className="filter" data-test-id="menu-item-lunch id="filter-btn-3"  onClick={() => handleFilter("Lunch")}>
           Lunch
         </li>
       </ul>
