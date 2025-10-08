@@ -19,12 +19,11 @@ const App = () => {
         <li className="filter"  id="filter-btn-1"  onClick={() => handleFilter("BreakFast")}>
           BreakFast
         </li>
-        
-        <li className="filter"  id="filter-btn-2" onClick={() => handleFilter("Shakes")}>
-          Shakes
-        </li>
         <li className="filter"  id="filter-btn-3"  onClick={() => handleFilter("Lunch")}>
           Lunch
+        </li>
+        <li className="filter"  id="filter-btn-2" onClick={() => handleFilter("Shakes")}>
+          Shakes
         </li>
       </ul>
       <Menu data={filteredData} />
