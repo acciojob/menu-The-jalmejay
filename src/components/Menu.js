@@ -8,7 +8,7 @@ const Menu = ({ data }) => {
       {data &&
         data.map((e) => {
           return (
-            <div key={e.id} className="menu-item" data-test-id={`menu-item-${e.category.toLowercase()}`}>
+            <div key={e.id} className="menu-item" data-test-id={`menu-item-${e.category.toLowerCase()}`}>
               <img src={e.img} alt={e.name} className="photo" />
               <div className="item-info">
                 <header>
